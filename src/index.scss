@@ -1,0 +1,12 @@
+//*abstracts*//
+@use './styles/abstracts/variables';
+@use './styles/abstracts/mixins';
+
+//*base*//
+@use './styles/base/base';
+@use './styles/base/resets';
+
+main {
+	display: flex;
+	flex-direction: row;
+}

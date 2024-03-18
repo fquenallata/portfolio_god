@@ -1,8 +1,10 @@
-export const Home = () => {
+const Home = () => {
 	return (
-		<main>
+		<section>
 			<h1>Multi-language app</h1>
 			<span>Select another language!</span>
-		</main>
+		</section>
 	);
 };
+
+export default Home;
