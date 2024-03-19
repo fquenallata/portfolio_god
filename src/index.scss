@@ -9,4 +9,8 @@
 main {
 	display: flex;
 	flex-direction: row;
+
+	@include mixins.media-query(800px) {
+		flex-direction: column;
+	}
 }
