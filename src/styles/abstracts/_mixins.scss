@@ -1,22 +1,26 @@
-@mixin flex-container($direction: row, $justify: flex-start, $align: stretch) {
+@mixin flex-container(
+	$flex-direction: row,
+	$justify-content: flex-start,
+	$align-items: stretch
+) {
 	display: flex;
-	flex-direction: $direction;
-	justify-content: $justify;
-	align-items: $align;
+	flex-direction: $flex-direction;
+	justify-content: $justify-content;
+	align-items: $align-items;
 }
 
 @mixin flex-grid(
 	$columns: 2,
 	$gap: 20px,
-	$direction: row,
-	$justify: flex-start,
-	$align: stretch
+	$flex-direction: row,
+	$justify-content: flex-start,
+	$align-items: stretch
 ) {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: $direction;
-	justify-content: $justify;
-	align-items: $align;
+	flex-direction: $flex-direction;
+	justify-content: $justify-content;
+	align-items: $align-items;
 	margin: -($gap / 2);
 
 	> * {
@@ -30,13 +34,13 @@
 	$height,
 	$width: 100%,
 	$display: inline-block,
-	$bg-size: contain,
-	$bg-pos: center
+	$background-size: contain,
+	$background-position: center
 ) {
 	background-image: url('#{$imgpath}');
-	background-position: $bg-pos;
+	background-position: $background-position;
 	background-repeat: no-repeat;
-	background-size: $bg-size;
+	background-size: $background-size;
 	content: '';
 	display: $display;
 	height: $height;
@@ -57,8 +61,8 @@
 	left: $left;
 }
 
-@mixin media-query($breakpoint) {
-	@media only screen and (max-width: $breakpoint) {
+@mixin media-query($max-width) {
+	@media only screen and (max-width: $max-width) {
 		@content;
 	}
 }
