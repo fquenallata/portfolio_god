@@ -1,25 +1,40 @@
+import SocialButtons from '../SocialButtons/SocialButtons';
+import './Nav.scss';
+
 const Nav = () => {
 	return (
 		<section>
-			<div>Esto es un logo con mi nombre</div>
+			<h1>Franco Quenallata</h1>
 			<ul>
 				<li>
-					<a href='#'>Home</a>
+					<a href='#'>
+						<p>-</p>Home
+					</a>
 				</li>
 				<li>
-					<a href='#'>About</a>
+					<a href='#'>
+						<p>-</p>About
+					</a>
 				</li>
 				<li>
-					<a href='#'>Portfolio</a>
+					<a href='#'>
+						<p>-</p>Portfolio
+					</a>
 				</li>
 				<li>
-					<a href='#'>Contact</a>
+					<a href='#'>
+						<p>-</p>Contact
+					</a>
 				</li>
 				<li>
-					<a href='#'>Skills</a>
+					<a href='#'>
+						<p>-</p>Skills
+					</a>
 				</li>
 			</ul>
-			<div>botones con mis redes sociales svgs</div>
+			<div id='buttons'>
+				<SocialButtons />
+			</div>
 		</section>
 	);
 };
