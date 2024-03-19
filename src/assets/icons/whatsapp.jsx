@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const whatsappIcon = ({ width, height, fill, ...props }) => (
+const WhatsappIcon = ({ width, height, fill, ...props }) => (
 	<svg
 		version='1.1'
 		id='Layer_1'
@@ -39,16 +39,10 @@ const whatsappIcon = ({ width, height, fill, ...props }) => (
 	</svg>
 );
 
-whatsappIcon.propTypes = {
+WhatsappIcon.propTypes = {
 	width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 	height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 	fill: PropTypes.string,
 };
 
-whatsappIcon.defaultProps = {
-	width: 512,
-	height: 512,
-	fill: '#ffffff',
-};
-
-export default whatsappIcon;
+export default WhatsappIcon;

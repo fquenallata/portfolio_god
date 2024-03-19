@@ -1,11 +1,13 @@
+import LetraFSVG from '../../assets/icons/LetraF';
 import SocialButtons from '../Buttons/SocialButtons';
 import './Nav.scss';
 
 const Nav = () => {
 	return (
 		<section>
-			<div id='logo Name'>
-				<h1>Franco Quenallata</h1>
+			<div className='logoName'>
+				<LetraFSVG size='120' fill='#fff' />
+				<h1>Quenallata</h1>
 			</div>
 			<ul>
 				<li>

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const gmailIcon = ({ width, height, fill, ...props }) => (
+const GmailIcon = ({ width, height, fill, ...props }) => (
 	<svg
 		clipRule='evenodd'
 		fillRule='evenodd'
@@ -20,16 +20,10 @@ const gmailIcon = ({ width, height, fill, ...props }) => (
 	</svg>
 );
 
-gmailIcon.propTypes = {
+GmailIcon.propTypes = {
 	width: PropTypes.string,
 	height: PropTypes.string,
 	fill: PropTypes.string,
 };
 
-gmailIcon.defaultProps = {
-	width: '30mm',
-	height: '30mm',
-	fill: 'white',
-};
-
-export default gmailIcon;
+export default GmailIcon;

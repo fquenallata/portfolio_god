@@ -27,10 +27,4 @@ GitHubIcon.propTypes = {
 	fill: PropTypes.string,
 };
 
-GitHubIcon.defaultProps = {
-	width: '32px',
-	height: '32px',
-	fill: '#000000',
-};
-
 export default GitHubIcon;

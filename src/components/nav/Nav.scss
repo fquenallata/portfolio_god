@@ -5,10 +5,12 @@ section {
 	flex-direction: column;
 	justify-content: space-around;
 
-	h1 {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 25vh;
+	.logoName {
+		h1 {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 25vh;
+		}
 	}
 
 	ul {

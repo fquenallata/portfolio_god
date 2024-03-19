@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const linkedinIcon = ({ width, height, fill, ...props }) => (
+const LinkedinIcon = ({ width, height, fill, ...props }) => (
 	<svg
 		xmlns='http://www.w3.org/2000/svg'
 		width={width}
@@ -27,16 +27,10 @@ const linkedinIcon = ({ width, height, fill, ...props }) => (
 	</svg>
 );
 
-linkedinIcon.propTypes = {
+LinkedinIcon.propTypes = {
 	width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 	height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 	fill: PropTypes.string,
 };
 
-linkedinIcon.defaultProps = {
-	width: '2500',
-	height: '2500',
-	fill: 'white',
-};
-
-export default linkedinIcon;
+export default LinkedinIcon;
