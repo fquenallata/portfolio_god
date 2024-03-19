@@ -1,10 +1,10 @@
 //*abstracts*//
-@use './styles/abstracts/variables';
-@use './styles/abstracts/mixins';
+@use './abstracts/variables';
+@use './abstracts/mixins';
 
 //*base*//
-@use './styles/base/base';
-@use './styles/base/resets';
+@use './base/base';
+@use './base/resets';
 
 main {
 	display: flex;

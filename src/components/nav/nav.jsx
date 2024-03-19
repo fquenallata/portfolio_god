@@ -4,7 +4,9 @@ import './Nav.scss';
 const Nav = () => {
 	return (
 		<section>
-			<h1>Franco Quenallata</h1>
+			<div id='logo Name'>
+				<h1>Franco Quenallata</h1>
+			</div>
 			<ul>
 				<li>
 					<a href='#'>
