@@ -1,4 +1,4 @@
-import SocialButtons from '../SocialButtons/SocialButtons';
+import SocialButtons from '../Buttons/SocialButtons';
 import './Nav.scss';
 
 const Nav = () => {
