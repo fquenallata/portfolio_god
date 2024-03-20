@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 const LinkedinIcon = ({ size, fill, ...props }) => (
 	<svg
+		className='icons'
 		xmlns='http://www.w3.org/2000/svg'
 		width={size}
 		height={size}

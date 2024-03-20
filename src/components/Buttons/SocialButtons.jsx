@@ -11,11 +11,11 @@ const SocialButtons = () => {
 	return (
 		<div className='socialButtons'>
 			<GitHubIcon className='icons' size={themeMode.size} fill='#000' />
-			<span className='midSpan'></span>
+			<span className='midSpan' />
 			<GmailIcon size={themeMode.size} fill='#000' />
-			<span className='midSpan'></span>
+			<span className='midSpan' />
 			<LinkedinIcon size={themeMode.size} fill='#000' />
-			<span className='lastSpan'></span>
+			<span className='lastSpan' />
 		</div>
 	);
 };

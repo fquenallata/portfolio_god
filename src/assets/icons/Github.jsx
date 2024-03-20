@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 const GitHubIcon = ({ size, fill, ...props }) => (
 	<svg
+		className='icons'
 		version='1.1'
 		id='Layer_1'
 		xmlns='http://www.w3.org/2000/svg'
@@ -11,7 +12,6 @@ const GitHubIcon = ({ size, fill, ...props }) => (
 		width={size}
 		height={size}
 		viewBox='0 0 32 32'
-		style={{ enableBackground: 'new 0 0 32 32' }}
 		xmlSpace='preserve'
 		fill={fill}
 		{...props}

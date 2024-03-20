@@ -1,0 +1,12 @@
+.icons {
+	cursor: pointer;
+	border-radius: 50%;
+	transition: stroke 0.3s, background-color 0.3s, border-color 0.3s;
+	border: 5px solid transparent;
+}
+
+.icons:hover {
+	background-color: var(--high-yellow);
+	border-color: var(--high-yellow);
+	transform: scale(1.2);
+}
