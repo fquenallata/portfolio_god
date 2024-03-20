@@ -1,6 +1,6 @@
 const Home = () => {
 	return (
-		<section>
+		<section id='Home'>
 			<h1>Multi-language app</h1>
 			<span>Select another language!</span>
 		</section>

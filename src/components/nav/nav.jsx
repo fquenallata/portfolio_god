@@ -4,10 +4,10 @@ import './Nav.scss';
 
 const Nav = () => {
 	return (
-		<section>
+		<section id='Nav'>
 			<div className='logoName'>
-				<LetraFSVG size='120' fill='#fff' />
-				<h1>Quenallata</h1>
+				<LetraFSVG size='120' fill='#000' />
+				<h4>Quenallata</h4>
 			</div>
 			<ul>
 				<li>
