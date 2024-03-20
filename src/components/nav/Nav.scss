@@ -1,7 +1,7 @@
 #Nav {
 	display: flex;
 	height: 100vh;
-	min-width: 280px;
+	min-width: 260px;
 	flex-direction: column;
 	justify-content: flex-end;
 	background-image: url(../../assets/bg.jpg);
@@ -16,7 +16,7 @@
 		padding-right: 30px;
 		padding-top: 5px;
 		top: 0;
-		left: 40px;
+		left: 45px;
 
 		.cuadradoRojo {
 			position: relative;
@@ -47,12 +47,12 @@
 				flex-direction: row;
 				text-transform: uppercase;
 				margin: 15px 0;
-				min-width: 210px;
+				min-width: 197px;
 				padding: 16px 20px 15px 20px;
 				color: black;
 				border: 1px solid black;
 				font-family: sans-serif;
-				font-size: 18px;
+				font-size: 17px;
 				font-weight: 600;
 				transition: 0.5s;
 				z-index: 1;

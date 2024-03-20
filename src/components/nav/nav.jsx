@@ -1,11 +1,9 @@
 import PropTypes from 'prop-types';
-import LetraFSVG from '../../assets/icons/LetraF';
+import LetraFSVG from '../../icons/LetraF';
 import SocialButtons from '../Buttons/SocialButtons';
 import './Nav.scss';
 
 const Nav = ({ t }) => {
-	console.log(t('nav.Home'));
-
 	return (
 		<section id='Nav'>
 			<div className='logoName'>
