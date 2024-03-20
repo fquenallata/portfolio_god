@@ -1,8 +1,11 @@
+import PropTypes from 'prop-types';
 import LetraFSVG from '../../assets/icons/LetraF';
 import SocialButtons from '../Buttons/SocialButtons';
 import './Nav.scss';
 
-const Nav = () => {
+const Nav = ({ t }) => {
+	console.log(t('nav.Home'));
+
 	return (
 		<section id='Nav'>
 			<div className='logoName'>
@@ -13,27 +16,32 @@ const Nav = () => {
 			<ul>
 				<li>
 					<a href='#'>
-						<p>-</p>Home
+						<p>-</p>
+						{t('nav.Home')}
 					</a>
 				</li>
 				<li>
 					<a href='#'>
-						<p>-</p>About
+						<p>-</p>
+						{t('nav.About')}
 					</a>
 				</li>
 				<li>
 					<a href='#'>
-						<p>-</p>Portfolio
+						<p>-</p>
+						{t('nav.Portfolio')}
 					</a>
 				</li>
 				<li>
 					<a href='#'>
-						<p>-</p>Contact
+						<p>-</p>
+						{t('nav.Contact')}
 					</a>
 				</li>
 				<li>
 					<a href='#'>
-						<p>-</p>Skills
+						<p>-</p>
+						{t('nav.Skills')}
 					</a>
 				</li>
 			</ul>
@@ -42,6 +50,10 @@ const Nav = () => {
 			</div>
 		</section>
 	);
+};
+
+Nav.propTypes = {
+	t: PropTypes.func,
 };
 
 export default Nav;

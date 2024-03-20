@@ -1,11 +1,17 @@
+import PropTypes from 'prop-types';
+import ChangeIdiom from '../../components/Buttons/ChangeIdiom';
 import './Home.scss';
-const Home = () => {
+
+const Home = ({ t }) => {
 	return (
 		<section id='Home'>
-			<h1>Multi-language app</h1>
-			<span>Select another language!</span>
+			<ChangeIdiom text={t('idiom')} />
 		</section>
 	);
+};
+
+Home.propTypes = {
+	t: PropTypes.func,
 };
 
 export default Home;

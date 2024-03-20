@@ -1,0 +1,10 @@
+{
+	"idiom": "en",
+	"nav": {
+		"Home": "Inicio",
+		"Contact": "Contacto",
+		"Skills": "Habilidades",
+		"About": "Sobre mí",
+		"Portfolio": "Proyectos"
+	}
+}

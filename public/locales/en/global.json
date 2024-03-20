@@ -1,0 +1,10 @@
+{
+	"idiom": "es",
+	"nav": {
+		"Home": "Home",
+		"Contact": "Contact",
+		"Skills": "Skills",
+		"About": "About",
+		"Portfolio": "Portfolio"
+	}
+}
