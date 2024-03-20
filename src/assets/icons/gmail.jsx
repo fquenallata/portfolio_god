@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 
-const GmailIcon = ({ width, height, fill, ...props }) => (
+const GmailIcon = ({ size, fill, ...props }) => (
 	<svg
 		clipRule='evenodd'
 		fillRule='evenodd'
-		height={height}
+		height={size}
 		imageRendering='optimizeQuality'
 		shapeRendering='geometricPrecision'
 		textRendering='geometricPrecision'
 		viewBox='0 0 3000 3000'
-		width={width}
+		width={size}
 		xmlns='http://www.w3.org/2000/svg'
 		{...props}
 	>
@@ -21,8 +21,7 @@ const GmailIcon = ({ width, height, fill, ...props }) => (
 );
 
 GmailIcon.propTypes = {
-	width: PropTypes.string,
-	height: PropTypes.string,
+	size: PropTypes.string,
 	fill: PropTypes.string,
 };
 

@@ -29,7 +29,7 @@ const LetraFSVG = ({
 };
 
 LetraFSVG.propTypes = {
-	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	size: PropTypes.string,
 	fill: PropTypes.string,
 	stroke: PropTypes.string,
 	viewBox: PropTypes.string,

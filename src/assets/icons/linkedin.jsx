@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
-const LinkedinIcon = ({ width, height, fill, ...props }) => (
+const LinkedinIcon = ({ size, fill, ...props }) => (
 	<svg
 		xmlns='http://www.w3.org/2000/svg'
-		width={width}
-		height={height}
+		width={size}
+		height={size}
 		viewBox='7.025 7.025 497.951 497.95'
 		{...props}
 	>
@@ -28,8 +28,7 @@ const LinkedinIcon = ({ width, height, fill, ...props }) => (
 );
 
 LinkedinIcon.propTypes = {
-	width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-	height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	size: PropTypes.string,
 	fill: PropTypes.string,
 };
 

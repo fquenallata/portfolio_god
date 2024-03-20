@@ -6,8 +6,9 @@ const Nav = () => {
 	return (
 		<section id='Nav'>
 			<div className='logoName'>
+				<div className='cuadradoRojo'></div>
 				<LetraFSVG size='120' fill='#000' />
-				<h4>Quenallata</h4>
+				<h5>Quenallata</h5>
 			</div>
 			<ul>
 				<li>
