@@ -1,11 +1,21 @@
-import { useState } from 'react';
 import './ThemeToggle.scss';
 
 const ThemeToggle = () => {
-	const [isChecked, setIsChecked] = useState(false);
+	const setDarkMode = () => {
+		document.querySelector('body').setAttribute('date-theme', 'dark');
+	};
 
-	const toggleDarkMode = () => {
-		setIsChecked(!isChecked);
+	const setLightMode = () => {
+		document.querySelector('body').setAttribute('date-theme', 'light');
+	};
+
+	setDarkMode();
+	const toggleDarkMode = (e) => {
+		if (e.target.checked) {
+			setDarkMode();
+		} else {
+			setLightMode();
+		}
 	};
 
 	return (
@@ -15,8 +25,7 @@ const ThemeToggle = () => {
 					id='switch'
 					className='input'
 					type='checkbox'
-					checked={isChecked}
-					onChange={toggleDarkMode}
+					onChange={(e) => toggleDarkMode(e)}
 				/>
 				<div className='icon icon--moon'>
 					<svg
