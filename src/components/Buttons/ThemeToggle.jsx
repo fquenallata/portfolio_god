@@ -6,7 +6,6 @@ const ThemeToggle = () => {
 
 	const toggleDarkMode = () => {
 		setIsChecked(!isChecked);
-		// Aquí puedes agregar lógica adicional para cambiar el tema de tu aplicación
 	};
 
 	return (
@@ -23,7 +22,7 @@ const ThemeToggle = () => {
 					<svg
 						height='32'
 						width='32'
-						fill='currentColor'
+						fill='purple'
 						viewBox='0 0 24 24'
 						xmlns='http://www.w3.org/2000/svg'
 					>
@@ -38,7 +37,7 @@ const ThemeToggle = () => {
 					<svg
 						height='32'
 						width='32'
-						fill='currentColor'
+						fill='purple'
 						viewBox='0 0 24 24'
 						xmlns='http://www.w3.org/2000/svg'
 					>

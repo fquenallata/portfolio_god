@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import LetraFSVG from '../../icons/LetraF';
 import SocialButtons from '../Buttons/SocialButtons';
+import LetraFSVG from '../icons/LetraF';
 import './Nav.scss';
 
 const Nav = ({ t }) => {

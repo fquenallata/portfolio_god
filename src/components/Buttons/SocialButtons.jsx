@@ -1,6 +1,6 @@
-import GitHubIcon from '../../icons/Github';
-import GmailIcon from '../../icons/Gmail';
-import LinkedinIcon from '../../icons/Linkedin';
+import GitHubIcon from '../icons/Github';
+import GmailIcon from '../icons/Gmail';
+import LinkedinIcon from '../icons/Linkedin';
 
 import './SocialButtons.scss';
 
