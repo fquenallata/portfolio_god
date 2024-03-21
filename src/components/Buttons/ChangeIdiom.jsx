@@ -1,9 +1,8 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './ChangeIdiom.scss';
 
-const ChangeIdiom = ({ text }) => {
+const ChangeIdiom = () => {
 	const { i18n } = useTranslation(['global']);
 	const [idiom, setIdiom] = useState('en');
 
@@ -15,15 +14,19 @@ const ChangeIdiom = ({ text }) => {
 
 	return (
 		<div className='changeIdiomButton'>
-			<button className='IdiomButton' onClick={toggleLanguage}>
-				{text}
-			</button>
+			<div className='switch'>
+				<input
+					id='language-toggle'
+					className='check-toggle check-toggle-round-flat'
+					type='checkbox'
+					onClick={toggleLanguage}
+				/>
+				<label htmlFor='language-toggle'></label>
+				<span className='on'>en</span>
+				<span className='off'>es</span>
+			</div>
 		</div>
 	);
-};
-
-ChangeIdiom.propTypes = {
-	text: PropTypes.string,
 };
 
 export default ChangeIdiom;

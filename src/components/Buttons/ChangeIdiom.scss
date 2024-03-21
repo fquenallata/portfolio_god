@@ -1,9 +1,104 @@
-.changeIdiomButton {
-	display: flex;
-	width: 20px;
-	height: 20px;
-	border: 1px solid black;
-	.IdiomButton {
-		cursor: pointer;
-	}
+.switch {
+	position: relative;
+	display: inline-block;
+	margin: 0 6px;
+}
+
+.switch > span {
+	position: absolute;
+	top: 11px;
+	pointer-events: none;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	width: 50%;
+	text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+	color: white;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+	color: black;
+}
+
+.switch > span.on {
+	left: 0;
+	padding-left: 5.5px;
+	color: white;
+}
+
+.switch > span.off {
+	right: 0;
+	padding-right: 5.5px;
+	color: black;
+}
+
+.check-toggle {
+	position: absolute;
+	visibility: hidden;
+}
+
+.check-toggle + label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+	padding: 2px;
+	width: 100px;
+	height: 35px;
+	background-color: #ffffff;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	-ms-border-radius: 60px;
+	-o-border-radius: 60px;
+	border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before,
+input.check-toggle-round-flat + label:after {
+	display: block;
+	position: absolute;
+	content: '';
+}
+
+input.check-toggle-round-flat + label:before {
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	right: 2px;
+	background-color: #ffffff;
+	-webkit--moz-border-radius: 60px;
+	-ms-border-radius: 60px;
+	-o-border-radius: 60px;
+	border-radius: 60px;
+}
+input.check-toggle-round-flat + label:after {
+	top: 4px;
+	left: 4px;
+	bottom: 4px;
+	width: 48px;
+	background-color: #242424;
+	-webkit-border-radius: 52px;
+	-moz-border-radius: 52px;
+	-ms-border-radius: 52px;
+	-o-border-radius: 52px;
+	border-radius: 52px;
+	-webkit-transition: margin 0.2s;
+	-moz-transition: margin 0.2s;
+	-o-transition: margin 0.2s;
+	transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label:after {
+	margin-left: 44px;
 }
