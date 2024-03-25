@@ -1,15 +1,15 @@
 import './ThemeToggle.scss';
 
 const ThemeToggle = () => {
-	const setDarkMode = () => {
-		document.querySelector('body').setAttribute('date-theme', 'dark');
-	};
-
 	const setLightMode = () => {
-		document.querySelector('body').setAttribute('date-theme', 'light');
+		document.querySelector('body').setAttribute('data-theme', 'light');
 	};
 
-	setDarkMode();
+	const setDarkMode = () => {
+		document.querySelector('body').setAttribute('data-theme', 'dark');
+	};
+
+	setLightMode();
 	const toggleDarkMode = (e) => {
 		if (e.target.checked) {
 			setDarkMode();

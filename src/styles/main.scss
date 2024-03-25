@@ -6,6 +6,13 @@
 @use './base/base';
 @use './base/resets';
 
+//*theme*//
+[data-theme='dark'] {
+	--nav-background-image: url('../../public/bg-negativo.jpg');
+	--dark-color: white;
+	--dark-hover: black;
+}
+
 main {
 	display: flex;
 	flex-direction: row;

@@ -8,7 +8,7 @@ const Nav = ({ t }) => {
 		<section id='Nav'>
 			<div className='logoName'>
 				<div className='cuadradoRojo'></div>
-				<LetraFSVG size='120' fill='#000' />
+				<LetraFSVG size='120' />
 				<h5>Quenallata</h5>
 			</div>
 			<ul>
