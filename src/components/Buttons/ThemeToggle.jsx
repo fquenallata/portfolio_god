@@ -1,21 +1,27 @@
+import { useEffect, useState } from 'react';
 import './ThemeToggle.scss';
 
 const ThemeToggle = () => {
+	const [darkMode, setDarkMode] = useState(false);
+
 	const setLightMode = () => {
 		document.querySelector('body').setAttribute('data-theme', 'light');
 	};
 
-	const setDarkMode = () => {
+	const setDarkModeLocal = () => {
 		document.querySelector('body').setAttribute('data-theme', 'dark');
 	};
 
-	setLightMode();
-	const toggleDarkMode = (e) => {
-		if (e.target.checked) {
-			setDarkMode();
+	useEffect(() => {
+		if (darkMode) {
+			setDarkModeLocal();
 		} else {
 			setLightMode();
 		}
+	}, [darkMode]);
+
+	const toggleDarkMode = (e) => {
+		setDarkMode(e.target.checked);
 	};
 
 	return (
@@ -26,6 +32,7 @@ const ThemeToggle = () => {
 					className='input'
 					type='checkbox'
 					onChange={(e) => toggleDarkMode(e)}
+					checked={darkMode}
 				/>
 				<div className='icon icon--moon'>
 					<svg
