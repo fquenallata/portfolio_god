@@ -13,31 +13,31 @@ const Nav = ({ t }) => {
 			</div>
 			<ul>
 				<li>
-					<a href='#'>
+					<a href='#home'>
 						<p>{`•    `}</p>
 						{`${t('nav.Home')}`}
 					</a>
 				</li>
 				<li>
-					<a href='#'>
+					<a href='#about'>
 						<p>{`•    `}</p>
 						{t('nav.About')}
 					</a>
 				</li>
 				<li>
-					<a href='#'>
+					<a href='#portfolio'>
 						<p>{`•    `}</p>
 						{t('nav.Portfolio')}
 					</a>
 				</li>
 				<li>
-					<a href='#'>
+					<a href='#contact'>
 						<p>{`•    `}</p>
 						{t('nav.Contact')}
 					</a>
 				</li>
 				<li>
-					<a href='#'>
+					<a href='#skills'>
 						<p>{`•    `}</p>
 						{t('nav.Skills')}
 					</a>

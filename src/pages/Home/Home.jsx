@@ -5,9 +5,11 @@ import './Home.scss';
 
 const Home = ({ t }) => {
 	return (
-		<section id='Home'>
-			<ThemeToggle />
-			<ChangeIdiom text={t('idiom')} />
+		<section id='home'>
+			<div className='toggles'>
+				<ThemeToggle />
+				<ChangeIdiom text={t('idiom')} />
+			</div>
 		</section>
 	);
 };

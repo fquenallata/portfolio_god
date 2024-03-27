@@ -18,7 +18,7 @@ main {
 	display: flex;
 	flex-direction: row;
 
-	@include mixins.media-query(800px) {
+	@include mixins.media-query(1000px) {
 		flex-direction: column;
 	}
 }

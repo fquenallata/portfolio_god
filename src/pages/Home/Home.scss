@@ -1,4 +1,17 @@
 #Home {
 	background-color: grey;
 	width: 100%;
+	position: relative;
+
+	.toggles {
+		display: flex;
+		flex-direction: row;
+		width: 220px;
+		margin-right: 20px;
+		justify-content: space-between;
+		position: fixed;
+		top: 0;
+		right: 0;
+		padding: 20px;
+	}
 }
