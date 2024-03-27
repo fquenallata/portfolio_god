@@ -10,11 +10,11 @@ const SocialButtons = () => {
 	};
 	return (
 		<div className='socialButtons'>
-			<LinkedinIcon size={themeMode.size} fill='#000' />
+			<LinkedinIcon size={themeMode.size} />
 			<span className='midSpan' />
-			<GitHubIcon className='icons' size={themeMode.size} fill='#000' />
+			<GitHubIcon className='icons' size={themeMode.size} />
 			<span className='midSpan' />
-			<GmailIcon size={themeMode.size} fill='#000' />
+			<GmailIcon size={themeMode.size} />
 			<span className='lastSpan' />
 		</div>
 	);

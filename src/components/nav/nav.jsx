@@ -9,36 +9,36 @@ const Nav = ({ t }) => {
 			<div className='logoName'>
 				<div className='cuadradoRojo'></div>
 				<LetraFSVG size='120' />
-				<h5>Quenallata</h5>
+				<h3>Quenallata</h3>
 			</div>
 			<ul>
 				<li>
 					<a href='#'>
-						<p>-</p>
-						{t('nav.Home')}
+						<p>{`•    `}</p>
+						{`${t('nav.Home')}`}
 					</a>
 				</li>
 				<li>
 					<a href='#'>
-						<p>-</p>
+						<p>{`•    `}</p>
 						{t('nav.About')}
 					</a>
 				</li>
 				<li>
 					<a href='#'>
-						<p>-</p>
+						<p>{`•    `}</p>
 						{t('nav.Portfolio')}
 					</a>
 				</li>
 				<li>
 					<a href='#'>
-						<p>-</p>
+						<p>{`•    `}</p>
 						{t('nav.Contact')}
 					</a>
 				</li>
 				<li>
 					<a href='#'>
-						<p>-</p>
+						<p>{`•    `}</p>
 						{t('nav.Skills')}
 					</a>
 				</li>
