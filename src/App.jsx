@@ -1,8 +1,11 @@
 import { Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
+import ChangeIdiom from './components/Buttons/ChangeIdiom';
+import ThemeToggle from './components/Buttons/ThemeToggle';
 import Nav from './components/Nav/Nav';
+import About from './pages/About/About';
 import Home from './pages/Home/Home';
-import './styles/main.scss';
+import './styles/App.scss';
 
 function App() {
 	const { t } = useTranslation(['global']);
@@ -11,7 +14,19 @@ function App() {
 		<main className='main'>
 			<Suspense fallback='cargando traducciones'>
 				<Nav t={t} />
-				<Home t={t} />
+
+				{/* contenido */}
+				<section id='content'>
+					{/* //toggles flotantes*/}
+					<div className='toggles'>
+						<ThemeToggle />
+						<ChangeIdiom text={t('idiom')} />
+					</div>
+
+					{/* pages */}
+					<Home t={t} />
+					<About />
+				</section>
 			</Suspense>
 		</main>
 	);

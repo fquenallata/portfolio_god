@@ -4,9 +4,9 @@
 	min-width: 260px;
 	flex-direction: column;
 	justify-content: flex-end;
-	background-image: var(--nav-background);
-	background-size: 100% 100%;
-	background-position: center;
+	border-right: 2px solid var(--strong-color);
+	position: fixed;
+	z-index: 20;
 
 	.logoName {
 		display: flex;

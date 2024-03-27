@@ -1,6 +1,11 @@
-function About() {
-	var saludo = 'hola mundo';
-	return <div>{saludo}</div>;
-}
+import './About.scss';
+
+const About = () => {
+	return (
+		<section id='about'>
+			<h1>About</h1>
+		</section>
+	);
+};
 
 export default About;
