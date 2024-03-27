@@ -7,7 +7,7 @@
 	place-items: center;
 	cursor: pointer;
 	line-height: 1;
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 20px var(--box-shadow-toggle);
 }
 
 .input {

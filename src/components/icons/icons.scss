@@ -9,8 +9,6 @@
 
 .icons:hover {
 	fill: var(--color-second);
-	background-color: var(--background-color);
-	border-color: var(--background-color);
 	transform: scale(1.2);
 	box-shadow: 0 0 0 1.5px var(--color-first);
 	transition: fill 0.3s ease, background-color 0.3s ease, border-color 0.3s ease,

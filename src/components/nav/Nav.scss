@@ -24,7 +24,7 @@
 			left: 46px;
 			width: 15px;
 			height: 15px;
-			background-color: var(--color-first);
+			background-color: var(--color-second);
 		}
 
 		h3 {
@@ -32,7 +32,7 @@
 			letter-spacing: 3px;
 			font-weight: bold;
 			padding-left: 70px;
-			color: var(--color-first);
+			color: var(--color-second);
 		}
 		h3::first-letter {
 			color: var(--text-color);
@@ -103,7 +103,7 @@
 				}
 				p {
 					padding-top: 1px;
-					color: var(--color-first);
+					color: var(--color-second);
 				}
 			}
 		}

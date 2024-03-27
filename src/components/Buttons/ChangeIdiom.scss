@@ -61,7 +61,7 @@ input.check-toggle-round-flat + label {
 	width: 100px;
 	height: 35px;
 	background-color: #ffffff;
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 20px var(--box-shadow-toggle);
 	-webkit-border-radius: 60px;
 	-moz-border-radius: 60px;
 	-ms-border-radius: 60px;
