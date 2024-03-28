@@ -11,7 +11,7 @@ const Home = () => {
 				</h5>
 
 				<p className='home-text'>
-					GM, {`I'm`}{' '}
+					GM, {`I am`}{' '}
 					<i>
 						<strong>Franco Quenallata</strong>
 					</i>
@@ -19,11 +19,20 @@ const Home = () => {
 					<strong>
 						<span className='label dynamic'>dynamic</span>
 					</strong>
-					,<span className='label creative'>creative</span>
-					products from start to finish. Focused on developing intuitive
+					,<span className='label creative'>creative</span>, and
+					<span className='label robust'>robust</span> products from start to
+					finish. Focused on developing
+					<span className='label intuitive'>intuitive</span>
 					experiences that constantly grow and improve based on user metrics.
 				</p>
-				<i>Got something in mind?</i>
+				<div className='work-together'>
+					<h3>
+						<strong>
+							<i>{`Got something in mind? ->`}</i>
+						</strong>
+					</h3>
+					<button className='button'>Let`s work together!</button>
+				</div>
 			</div>
 		</section>
 	);

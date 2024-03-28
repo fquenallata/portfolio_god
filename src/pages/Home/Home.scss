@@ -61,6 +61,43 @@
 				background-color: var(--color-fourth);
 				color: var(--title-color);
 			}
+
+			.intuitive {
+				background-color: var(--color-third);
+				color: white;
+			}
+
+			.robust {
+				background-color: var(--color-second);
+				color: white;
+			}
+		}
+
+		.work-together {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			.button {
+				margin-left: 5px;
+				padding-left: 10px;
+				padding-right: 7px;
+				width: auto;
+				height: 40px;
+				border-radius: 5px;
+				border: 2px solid #323232;
+				background-color: white;
+				box-shadow: 4px 4px #323232;
+				font-size: 17px;
+				font-weight: 600;
+				color: #323232;
+				cursor: pointer;
+			}
+
+			.button:active {
+				box-shadow: 0px 0px var(--main-color);
+				transform: translate(3px, 3px);
+			}
 		}
 	}
 }
