@@ -17,16 +17,18 @@ const Home = () => {
 				</h5>
 
 				<p className='home-text'>
-					GM, {`I am`}{' '}
-					<i>
-						<strong>Franco Quenallata</strong>
-					</i>
+					GM, I am
+					<a href='#about'>
+						<i>
+							<strong> Franco Quenallata</strong>
+						</i>
+					</a>
 					. I enjoy building
 					<strong>
 						<span className='label dynamic'>dynamic</span>
 					</strong>
 					,<span className='label creative'>creative</span>, and
-					<span className='label robust'>robust</span> products from start to
+					<span className='label robust'>robust</span>products from start to
 					finish. Focused on developing
 					<span className='label intuitive'>intuitive</span>
 					experiences that constantly grow and improve based on user metrics.
