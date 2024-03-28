@@ -31,12 +31,6 @@ const Nav = ({ t }) => {
 					</a>
 				</li>
 				<li>
-					<a href='#contact'>
-						<p>{`•    `}</p>
-						{t('nav.Contact')}
-					</a>
-				</li>
-				<li>
 					<a href='#skills'>
 						<p>{`•    `}</p>
 						{t('nav.Skills')}
