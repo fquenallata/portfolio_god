@@ -1,7 +1,9 @@
+import './Portfolio.scss';
+
 const Portfolio = () => {
 	return (
-		<section>
-			<h1></h1>
+		<section id='portfolio'>
+			<h1>Portfolio</h1>
 		</section>
 	);
 };

@@ -22,6 +22,7 @@ main {
 	flex-direction: row;
 	background-image: var(--nav-background);
 	background-size: 100% 100%;
+	height: auto;
 	background-attachment: fixed;
 
 	#content {

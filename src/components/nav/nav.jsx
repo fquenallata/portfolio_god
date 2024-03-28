@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import SocialButtons from '../Buttons/SocialButtons';
 import LetraFSVG from '../icons/LetraF';
 import './Nav.scss';
@@ -10,6 +10,43 @@ const Nav = ({ t }) => {
 	const handleLinkClick = (link) => {
 		setSelectedLink(link);
 	};
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const homeSection = document.getElementById('home');
+			const aboutSection = document.getElementById('about');
+			const portfolioSection = document.getElementById('portfolio');
+			const skillsSection = document.getElementById('skills');
+
+			const scrollPosition = window.scrollY;
+
+			if (
+				scrollPosition >= homeSection.offsetTop &&
+				scrollPosition < aboutSection.offsetTop
+			) {
+				setSelectedLink('home');
+			} else if (
+				scrollPosition >= aboutSection.offsetTop &&
+				scrollPosition < portfolioSection.offsetTop
+			) {
+				setSelectedLink('about');
+			} else if (
+				scrollPosition >= portfolioSection.offsetTop &&
+				scrollPosition < skillsSection.offsetTop
+			) {
+				setSelectedLink('portfolio');
+			} else if (scrollPosition >= skillsSection.offsetTop) {
+				setSelectedLink('skills');
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		// Cleanup
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
 
 	return (
 		<section id='Nav'>

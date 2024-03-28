@@ -5,6 +5,8 @@ import ThemeToggle from './components/Buttons/ThemeToggle';
 import Nav from './components/Nav/Nav';
 import About from './pages/About/About';
 import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Skills from './pages/Skills/Skills';
 import Tests from './pages/Tests/Tests';
 import './styles/App.scss';
 
@@ -27,6 +29,8 @@ function App() {
 					{/* pages */}
 					<Home t={t} />
 					<About />
+					<Portfolio />
+					<Skills />
 					<Tests />
 				</section>
 			</Suspense>
