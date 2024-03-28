@@ -1,6 +1,12 @@
 import './Home.scss';
 
 const Home = () => {
+	const linkedinUrl = 'https://www.linkedin.com/in/fquenallata';
+
+	const onClickWork = () => {
+		window.open(linkedinUrl, '_blank');
+	};
+
 	return (
 		<section id='home'>
 			<div className='content'>
@@ -31,7 +37,9 @@ const Home = () => {
 							<i>{`Got something in mind? ->`}</i>
 						</strong>
 					</h3>
-					<button className='button'>Let`s work together!</button>
+					<button className='button' onClick={onClickWork}>
+						Let`s work together!
+					</button>
 				</div>
 			</div>
 		</section>

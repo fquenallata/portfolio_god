@@ -8,13 +8,20 @@ const SocialButtons = () => {
 	const themeMode = {
 		size: '40',
 	};
+
 	return (
 		<div className='socialButtons'>
-			<LinkedinIcon size={themeMode.size} />
+			<a href='https://www.linkedin.com/in/fquenallata/'>
+				<LinkedinIcon size={themeMode.size} />
+			</a>
 			<span className='midSpan' />
-			<GitHubIcon className='icons' size={themeMode.size} />
+			<a href='https://github.com/fquenallata'>
+				<GitHubIcon className='icons' size={themeMode.size} />
+			</a>
 			<span className='midSpan' />
-			<GmailIcon size={themeMode.size} />
+			<a href='mailto:quenallatafranco@gmail.com'>
+				<GmailIcon size={themeMode.size} />
+			</a>
 			<span className='lastSpan' />
 		</div>
 	);
