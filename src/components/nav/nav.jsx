@@ -12,37 +12,40 @@ const Nav = ({ t }) => {
 	};
 
 	useEffect(() => {
+		const sections = [
+			{ id: 'home', label: 'home' },
+			{ id: 'about', label: 'about' },
+			{ id: 'portfolio', label: 'portfolio' },
+			{ id: 'skills', label: 'skills' },
+		];
+
 		const handleScroll = () => {
-			const homeSection = document.getElementById('home');
-			const aboutSection = document.getElementById('about');
-			const portfolioSection = document.getElementById('portfolio');
-			const skillsSection = document.getElementById('skills');
-
 			const scrollPosition = window.scrollY;
+			let selected = 'home';
 
-			if (
-				scrollPosition >= homeSection.offsetTop &&
-				scrollPosition < aboutSection.offsetTop
-			) {
-				setSelectedLink('home');
-			} else if (
-				scrollPosition >= aboutSection.offsetTop &&
-				scrollPosition < portfolioSection.offsetTop
-			) {
-				setSelectedLink('about');
-			} else if (
-				scrollPosition >= portfolioSection.offsetTop &&
-				scrollPosition < skillsSection.offsetTop
-			) {
-				setSelectedLink('portfolio');
-			} else if (scrollPosition >= skillsSection.offsetTop) {
-				setSelectedLink('skills');
+			for (let i = 0; i < sections.length; i++) {
+				const section = sections[i];
+				const nextSection = sections[i + 1];
+
+				const currentSection = document.getElementById(section.id);
+				const nextSectionOffset = nextSection
+					? document.getElementById(nextSection.id).offsetTop
+					: Infinity;
+
+				if (
+					scrollPosition >= currentSection.offsetTop &&
+					scrollPosition < nextSectionOffset
+				) {
+					selected = section.label;
+					break;
+				}
 			}
+
+			setSelectedLink(selected);
 		};
 
 		window.addEventListener('scroll', handleScroll);
 
-		// Cleanup
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
