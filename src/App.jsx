@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
 import ChangeIdiom from './components/Buttons/ChangeIdiom';
-import ThemeToggle from './components/Buttons/ThemeToggle';
+
 import Nav from './components/Nav/Nav';
 import About from './pages/About/About';
 import Home from './pages/Home/Home';
@@ -22,7 +22,6 @@ function App() {
 				<section id='content'>
 					{/* //toggles flotantes*/}
 					<div className='toggles'>
-						<ThemeToggle />
 						<ChangeIdiom text={t('idiom')} />
 					</div>
 

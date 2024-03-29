@@ -7,18 +7,17 @@
 @use './base/resets';
 
 //*theme*//
-[data-theme='dark'] {
-	--f-letter: black;
-	--square: #ff007f;
-	--text-color: #ececec;
-	--strong-color: #ececec;
-	--nav-background: url('bg-negative.jpg');
-	--background-color: #2e313a;
-	--box-shadow-toggle: rgba(255, 255, 255, 0.5);
-	--text-light: rgba(236, 236, 236, 1);
-	--subtitle-firstLetter: #ff007f;
-	--subtitle-text: black;
-}
+// [data-theme='dark'] {
+// 	--f-letter: black;
+// 	--square: #ff007f;
+// 	--text-color: #ececec;
+// 	--strong-color: #ececec;
+// 	--background-color: #2e313a;
+// 	--box-shadow-toggle: rgba(255, 255, 255, 0.5);
+// 	--text-light: rgba(236, 236, 236, 1);
+// 	--subtitle-firstLetter: #ff007f;
+// 	--subtitle-text: black;
+// }
 
 html {
 	scroll-behavior: smooth;
@@ -41,7 +40,7 @@ main {
 		.toggles {
 			display: flex;
 			flex-direction: row;
-			width: 220px;
+			width: 150px;
 			margin-right: 20px;
 			justify-content: space-between;
 			position: fixed;
