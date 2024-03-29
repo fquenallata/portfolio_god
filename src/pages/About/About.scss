@@ -11,9 +11,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		flex-direction: row;
 		height: 100%;
 		width: 70%;
+		min-width: 70%;
 
 		.about-image {
 			width: 500px;
@@ -24,7 +24,26 @@
 		.text-about {
 			display: flex;
 			flex-direction: column;
-			justify-content: start;
+
+			h3 {
+				font-family: alternate-gothic-no-2-d;
+				font-size: 25pt;
+				font-weight: normal;
+				font-style: normal;
+				color: var(--title-color);
+				margin-top: 5%;
+				text-shadow: 2px 2px 2px var(--title-shadow);
+				margin-bottom: 0px;
+				font-stretch: 75%;
+			}
+
+			p {
+				margin-top: 42px;
+				color: var(--text-light);
+				line-height: 2.2;
+				text-align: start;
+				margin-bottom: 80px;
+			}
 		}
 	}
 }

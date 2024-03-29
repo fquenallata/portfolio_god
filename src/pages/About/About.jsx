@@ -9,8 +9,8 @@ const About = () => {
 					<img className='about-image' src={Image} alt='img_about' />
 				</div>
 				<div className='text-about'>
+					<h3>ABOUT ME</h3>
 					<p>
-						<h3>ABOUT ME</h3>
 						Full Stack Developer skilled in creating and optimizing websites and
 						applications for end users in a scalable and modular manner. I like
 						to investigate, solve problems, learn from others and contribute
