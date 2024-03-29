@@ -16,7 +16,7 @@ const SocialButtons = () => {
 			</a>
 			<span className='midSpan' />
 			<a href='https://github.com/fquenallata'>
-				<GitHubIcon className='icons' size={themeMode.size} />
+				<GitHubIcon size={themeMode.size} />
 			</a>
 			<span className='midSpan' />
 			<a href='mailto:quenallatafranco@gmail.com'>

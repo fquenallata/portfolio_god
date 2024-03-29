@@ -8,13 +8,16 @@
 
 //*theme*//
 [data-theme='dark'] {
-	--background-color: #2e313a;
+	--f-letter: black;
+	--square: #ff007f;
 	--text-color: #ececec;
 	--strong-color: #ececec;
 	--nav-background: url('bg-negative.jpg');
+	--background-color: #2e313a;
 	--box-shadow-toggle: rgba(255, 255, 255, 0.5);
 	--text-light: rgba(236, 236, 236, 1);
 	--subtitle-firstLetter: #ff007f;
+	--subtitle-text: black;
 }
 
 html {

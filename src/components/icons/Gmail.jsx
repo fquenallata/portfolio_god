@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './icons.scss';
+import './Icons.scss';
 
 const GmailIcon = ({ size, fill, ...props }) => (
 	<svg

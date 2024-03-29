@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const GitHubIcon = ({ size, fill, ...props }) => (
+const GitHubIcon = ({ size, ...props }) => (
 	<svg
 		className='icons'
 		version='1.1'
@@ -13,7 +13,6 @@ const GitHubIcon = ({ size, fill, ...props }) => (
 		height={size}
 		viewBox='0 0 32 32'
 		xmlSpace='preserve'
-		fill={fill}
 		{...props}
 	>
 		<title>github</title>

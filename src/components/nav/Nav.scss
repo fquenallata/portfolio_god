@@ -24,7 +24,7 @@
 			left: 46px;
 			width: 15px;
 			height: 15px;
-			background-color: var(--color-fifth);
+			background-color: var(--square);
 		}
 
 		h3 {
@@ -32,7 +32,7 @@
 			letter-spacing: 3px;
 			font-weight: bold;
 			padding-left: 70px;
-			color: var(--title-color);
+			color: var(--subtitle-text);
 		}
 		h3::first-letter {
 			color: var(--subtitle-firstLetter);
