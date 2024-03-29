@@ -17,6 +17,10 @@
 	--subtitle-firstLetter: #ff007f;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 main {
 	display: flex;
 	flex-direction: row;
