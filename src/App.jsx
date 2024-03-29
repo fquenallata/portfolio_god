@@ -27,6 +27,7 @@ function App() {
 					</div>
 
 					{/* pages */}
+
 					<Home t={t} />
 					<About />
 					<Portfolio />

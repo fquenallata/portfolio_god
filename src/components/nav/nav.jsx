@@ -22,6 +22,7 @@ const Nav = ({ t }) => {
 		const handleScroll = () => {
 			const scrollPosition = window.scrollY;
 			let selected = 'home';
+			const offset = 250; // Ajusta este valor según tus necesidades
 
 			for (let i = 0; i < sections.length; i++) {
 				const section = sections[i];
@@ -33,8 +34,8 @@ const Nav = ({ t }) => {
 					: Infinity;
 
 				if (
-					scrollPosition >= currentSection.offsetTop &&
-					scrollPosition < nextSectionOffset
+					scrollPosition >= currentSection.offsetTop - offset &&
+					scrollPosition < nextSectionOffset - offset
 				) {
 					selected = section.label;
 					break;
