@@ -7,7 +7,6 @@ import About from './pages/About/About';
 import Home from './pages/Home/Home';
 import Portfolio from './pages/Portfolio/Portfolio';
 import Skills from './pages/Skills/Skills';
-import Tests from './pages/Tests/Tests';
 import './styles/App.scss';
 
 function App() {
@@ -31,7 +30,6 @@ function App() {
 					<About />
 					<Portfolio />
 					<Skills />
-					<Tests />
 				</section>
 			</Suspense>
 		</main>

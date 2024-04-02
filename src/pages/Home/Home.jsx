@@ -1,3 +1,4 @@
+import Arrow from '../../components/Buttons/Arrow';
 import './Home.scss';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
 
 	return (
 		<section id='home'>
+			<span></span>
 			<div className='content'>
 				<h2>FULL STACK DEVELOPER</h2>
 
@@ -44,6 +46,9 @@ const Home = () => {
 					</button>
 				</div>
 			</div>
+			<a href='#about' className='arrow-fixed'>
+				<Arrow />
+			</a>
 		</section>
 	);
 };
