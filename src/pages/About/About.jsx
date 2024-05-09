@@ -7,7 +7,7 @@ import Image from '/About.png';
 const About = ({ t }) => {
 	const downloadCV = () => {
 		window.open(
-			'https://res.cloudinary.com/dn  yntegig/image/upload/v1714682361/archivosPenna/cvEspañol.pdf',
+			'https://res.cloudinary.com/dnyntegig/image/upload/v1714682361/archivosPenna/cvEspañol.pdf',
 			'_blank'
 		);
 	};
