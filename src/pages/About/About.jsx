@@ -41,7 +41,7 @@ const About = ({ t }) => {
 					</p>
 					<div>
 						<button className='button' onClick={downloadCV}>
-							Descargar CV
+							{`${t('about.downloadButton')}`}
 						</button>
 					</div>
 				</div>
