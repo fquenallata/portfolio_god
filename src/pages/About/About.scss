@@ -19,7 +19,6 @@
 		min-width: 920px;
 
 		.about-image {
-			width: 500px;
 			box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.15);
 			margin-right: 20px;
 		}
@@ -27,6 +26,7 @@
 		.text-about {
 			display: flex;
 			flex-direction: column;
+			width: 36vw;
 
 			h3 {
 				font-family: alternate-gothic-no-2-d;
@@ -47,10 +47,35 @@
 				color: var(--text-light);
 				line-height: 2.2;
 				text-align: start;
+
+				.niceUnderline {
+					margin-bottom: -4px;
+				}
+
+				.dynamic {
+					border-bottom: 4px solid var(--color-fourth);
+				}
+
+				.creative {
+					border-bottom: 4px solid var(--color-first);
+				}
+
+				.robust {
+					border-bottom: 4px solid var(--color-second);
+				}
+
+				.ubication {
+					border-bottom: 4px solid var(--color-fifth);
+				}
+			}
+
+			.buttonContainer {
+				display: flex;
+				justify-content: start;
 			}
 
 			.button {
-				margin-left: 15px;
+				margin-left: 20px;
 				padding-left: 10px;
 				padding-right: 7px;
 				width: auto;

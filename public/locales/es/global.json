@@ -1,10 +1,42 @@
 {
 	"idiom": "en",
 	"nav": {
-		"Home": "Inicio",
-		"Contact": "Contacto",
-		"Skills": "Habilidades",
-		"About": "Sobre mí",
-		"Portfolio": "Proyectos"
+		"Home": "INICIO",
+		"Skills": "HABILIDADES",
+		"About": "SOBRE MÍ",
+		"Portfolio": "PROYECTOS"
+	},
+	"home": {
+		"title": "DESARROLLADOR FULL STACK",
+		"subTitle": "futuro Ingeniero en Sistemas",
+		"homeText": {
+			"1": "Hola!, soy",
+			"2": ". Disfruto construir productos",
+			"3": "dinamicos",
+			"4": "creativos",
+			"5": "y",
+			"6": "robustos",
+			"7": "de principio a fin. Me centro en desarrollar experiencias",
+			"8": "intuitivas",
+			"9": "que crezcan y mejoren constantemente según las métricas de usuario."
+		},
+		"buttonText": {
+			"1": "¿Tienes algo en mente?",
+			"2": "¡Trabajemos juntos!"
+		}
+	},
+	"about": {
+		"title": "SOBRE MÍ",
+		"aboutText": {
+			"1": "Desarrollador Full Stack con experiencia en desarrollo de aplicaciones web. ",
+			"2": "Me apasiona aprender",
+			"3": " nuevas tecnologías y estoy listo para ",
+			"4": "contribuir de manera significativa a proyectos ambiciosos.",
+			"5": "Actualmente, me encuentro cursando el segundo año de la carrera ",
+			"6": "Ingeniería en Sistemas",
+			"7": " en la Universidad Tecnológica Nacional - Facultad Regional ",
+			"8": "Buenos Aires - Argentina (UTN)",
+			"9": " y me comprometo a mantenerme actualizado en mi campo."
+		}
 	}
 }

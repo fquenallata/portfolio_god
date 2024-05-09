@@ -1,10 +1,42 @@
 {
 	"idiom": "es",
 	"nav": {
-		"Home": "Home",
-		"Contact": "Contact",
-		"Skills": "Skills",
-		"About": "About",
-		"Portfolio": "Portfolio"
+		"Home": "HOME",
+		"Skills": "SKILLS",
+		"About": "ABOUT ME",
+		"Portfolio": "PORTFOLIO"
+	},
+	"home": {
+		"title": "FULL STACK DEVELOPER",
+		"subTitle": "future Systems Engineer",
+		"homeText": {
+			"1": "GM, I am",
+			"2": ". I enjoy building",
+			"3": "dynamic",
+			"4": "creative",
+			"5": "and",
+			"6": "robust",
+			"7": "products from start to finish. Focused on developing",
+			"8": "intuitive",
+			"9": "experiences that constantly grow and improve based on user metrics."
+		},
+		"buttonText": {
+			"1": "Got something in mind?",
+			"2": "Let`s work together!"
+		}
+	},
+	"about": {
+		"title": "ABOUT ME",
+		"aboutText": {
+			"1": "Full Stack Developer with experience in web application development. ",
+			"2": "I have a passion for learning",
+			"3": " new technologies and I am ready to ",
+			"4": "contribute significantly to ambitious projects.",
+			"5": "Currently, I am studying the second year of the ",
+			"6": "Systems Engineering",
+			"7": " degree at the National Technological University - Regional Faculty ",
+			"8": "Buenos Aires - Argentina (UTN)",
+			"9": " and I am committed to staying updated in my field."
+		}
 	}
 }

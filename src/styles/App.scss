@@ -22,6 +22,18 @@
 html {
 	scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+	width: 10px; /* Puedes ajustar este valor según tu preferencia */
+	height: 100%;
+	background-color: rgb(202, 202, 202);
+}
+
+/* Color del thumb */
+::-webkit-scrollbar-thumb {
+	background-color: var(
+		--color-first
+	); /* Puedes ajustar este color según tu preferencia */
+}
 
 main {
 	display: flex;

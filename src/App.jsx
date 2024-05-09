@@ -27,7 +27,7 @@ function App() {
 					{/* pages */}
 
 					<Home t={t} />
-					<About />
+					<About t={t} />
 					<Portfolio />
 					<Skills />
 				</section>

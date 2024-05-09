@@ -42,7 +42,9 @@
 		}
 
 		h5 {
-			margin-left: 300pt;
+			display: block;
+			white-space: nowrap;
+			align-self: self-end;
 		}
 
 		.home-text {
@@ -51,6 +53,10 @@
 			line-height: 2.2;
 			text-align: center;
 			margin-bottom: 80px;
+
+			.parche {
+				display: inline-block;
+			}
 
 			.label {
 				border-radius: 4px;
@@ -61,6 +67,8 @@
 				margin-bottom: 0.3em;
 				margin-right: 0.3em;
 				margin-left: 0.3em;
+				height: 30px;
+				align-self: normal;
 			}
 
 			.creative {
@@ -71,6 +79,7 @@
 			.dynamic {
 				background-color: var(--color-fourth);
 				color: var(--title-color);
+				font-weight: bold;
 			}
 
 			.intuitive {

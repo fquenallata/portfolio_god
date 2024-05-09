@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import Arrow from '../../components/Buttons/Arrow';
 import './Home.scss';
 
-const Home = () => {
+const Home = ({ t }) => {
 	const linkedinUrl = 'https://www.linkedin.com/in/fquenallata';
 
 	const onClickWork = () => {
@@ -12,37 +13,36 @@ const Home = () => {
 		<section id='home'>
 			<span></span>
 			<div className='content'>
-				<h2>FULL STACK DEVELOPER</h2>
+				<h2>{`${t('home.title')}`}</h2>
 
 				<h5>
-					...& <i>future systems engineer</i>.
+					...& <i>{`${t('home.subTitle')}`}</i>.
 				</h5>
 
 				<p className='home-text'>
-					GM, I am
+					{`${t('home.homeText.1')}`}
 					<a href='#about'>
 						<i>
 							<strong> Franco Quenallata</strong>
 						</i>
 					</a>
-					. I enjoy building
-					<strong>
-						<span className='label dynamic'>dynamic</span>
-					</strong>
-					,<span className='label creative'>creative</span>, and
-					<span className='label robust'>robust</span>products from start to
-					finish. Focused on developing
-					<span className='label intuitive'>intuitive</span>
-					experiences that constantly grow and improve based on user metrics.
+					<div className='parche'>{`${t('home.homeText.2')}`}</div>
+					<span className='label dynamic'>{`${t('home.homeText.3')}`}</span>,
+					<span className='label creative'>{`${t('home.homeText.4')}`}</span>,
+					{`${t('home.homeText.5')}`}
+					<span className='label robust'>{`${t('home.homeText.6')}`}</span>
+					{`${t('home.homeText.7')}`}
+					<span className='label intuitive'>{`${t('home.homeText.8')}`}</span>
+					{`${t('home.homeText.9')}`}
 				</p>
 				<div className='work-together'>
 					<h3>
 						<strong>
-							<i>{`Got something in mind? ->`}</i>
+							<i>{`${t('home.buttonText.1')} ->`}</i>
 						</strong>
 					</h3>
 					<button className='button' onClick={onClickWork}>
-						Let`s work together!
+						{`${t('home.buttonText.2')}`}
 					</button>
 				</div>
 			</div>
@@ -51,6 +51,10 @@ const Home = () => {
 			</a>
 		</section>
 	);
+};
+
+Home.propTypes = {
+	t: PropTypes.func,
 };
 
 export default Home;
