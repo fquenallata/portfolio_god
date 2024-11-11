@@ -39,5 +39,11 @@
 			"9": " and I am committed to staying updated in my field."
 		},
 		"downloadButton": "Download Resume"
+	},
+	"portfolio": {
+		"title": "PORTFOLIO"
+	},
+	"skills": {
+		"title": "SKILLS"
 	}
 }

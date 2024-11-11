@@ -28,8 +28,8 @@ function App() {
 
 					<Home t={t} />
 					<About t={t} />
-					<Portfolio />
-					<Skills />
+					<Portfolio t={t} />
+					<Skills t={t} />
 				</section>
 			</Suspense>
 		</main>

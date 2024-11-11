@@ -1,11 +1,16 @@
+import PropTypes from 'prop-types';
 import './Skills.scss';
 
-const Skills = () => {
+const Skills = ({ t }) => {
 	return (
 		<section id='skills'>
-			<h1>Skills</h1>
+			<h2>{`${t('skills.title')}`}</h2>
 		</section>
 	);
+};
+
+Skills.propTypes = {
+	t: PropTypes.func,
 };
 
 export default Skills;

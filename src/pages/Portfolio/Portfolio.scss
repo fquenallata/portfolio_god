@@ -4,4 +4,11 @@
 	background-color: pink;
 	position: relative;
 	background-color: rgba(0, 0, 0, 0);
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		height: 80%;
+		width: 100%;
+	}
 }

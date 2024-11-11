@@ -39,5 +39,11 @@
 			"9": " y me comprometo a mantenerme actualizado en mi campo."
 		},
 		"downloadButton": "Descargar CV"
+	},
+	"portfolio": {
+		"title": "PROYECTOS"
+	},
+	"skills": {
+		"title": "HABILIDADES"
 	}
 }
