@@ -7,8 +7,25 @@
 
 	.content {
 		display: flex;
-		flex-direction: row;
-		height: 80%;
+		flex-direction: column;
+		height: 100%;
 		width: 100%;
+
+		.item {
+			display: flex;
+			flex-direction: row;
+
+			.number {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.preview {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
 	}
 }
